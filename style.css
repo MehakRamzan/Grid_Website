@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #232830;
+    margin: 0;
+    color: white;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+    width: 80%;
+    background-color: #232830;
+    color: white;
+    margin: auto;
+    font-family: Poppins;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.right ul {
+    list-style-type: none;
+    display: flex;
+    list-style-type: none;
+}
+
+.right ul li {
+    margin-right: 10px;
+}
+
+.section1 {
+    display: block;
+    text-align: center;
+    width: 844PX;
+    height: 391px;
+    margin: auto;
+}
+
+.section1 h1 {
+    font-family: Recursive;
+    font-size: 71px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    color: #FF7575;
+}
+
+.section1 p {
+    font-family: Recursive;
+    font-size: 29px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.logo {
+    height: 290px;
+}
+
+.section2 {
+    width: 90%;
+    margin: auto;
+    height: 70px;
+    margin-top: 170px;
+    border-top: 1px solid #9090901d;
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+}
+
+.section2 ul {
+    list-style-type: none;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    font-family: Poppins;
+    font-size: 1vw;
+    font-weight: 400;
+    color: #909090;
+    width: 80%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.card-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 70px;
+    margin: auto;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 439px;
+    width: 390px;
+    padding: 22px;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h2 {
+    font-size: 1.25em;
+    margin: 16px;
+    color: #0F1217;
+
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 28.5px;
+    text-align: left;
+
+}
+
+.card .description {
+    margin: 0 16px 16px;
+    color: #555;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #0F1217;
+
+}
+
+.card .date,
+.card .tag {
+    margin: 0 16px 8px;
+    font-size: 0.875em;
+    color: #888;
+    display: inline-flex;
+}
+
+.numbers {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #9090901d;
+
+}
+
+.numbers ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.numbers ul li {
+    padding-right: 15px;
+    font-family: Recursive;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #909090;
+
+}
+
+.numbers ul li:hover{
+    color: #FF7575;
+    border-top: 1px solid #FF7575 ;
+}
+
+.footer{
+display: flex;
+width: 80%;
+justify-content: space-between;
+margin: auto;
+padding-bottom: 30px;
+}
+
+.left-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.footer > p{
+    font-family: Source Sans Pro;
+font-size: 22px;
+font-weight: 600;
+line-height: 37.71px;
+text-align: left;
+
+}
+
+.btn{
+    padding: 7px;
+    background-color: #4699E0;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px){
+    /* CSS for mobile devices */
+
+/* General styles for mobile */
+body,
+html {
+    font-size: 14px; /* Adjust the base font size for better readability on smaller screens */
+}
+
+.nav {
+    height: auto; /* Let the height adjust automatically */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.logo{
+    height: 70px;
+}
+.section1 {
+    width: 90%; /* Adjust width to fit smaller screens */
+    height: auto; /* Let the height adjust automatically */
+}
+
+.section1 h1 {
+    font-size: 26px; /* Decrease font size for smaller screens */
+}
+
+.section1 p {
+    font-size: 14px; /* Decrease font size for smaller screens */
+}
+
+.section2 {
+    width: 100%; /* Adjust width to fit smaller screens */
+    margin-top: 20px; /* Adjust margin for spacing */
+    padding: 0px;
+
+}
+
+.card-grid {
+    width: 90%; /* Adjust width to fit smaller screens */
+    grid-template-columns: repeat(1, 1fr); /* Switch to a single column layout */
+    gap: 10px; /* Reduce the gap between cards */
+}
+
+.card {
+    width: 100%; /* Make cards occupy full width */
+    height: auto; /* Let the height adjust automatically */
+}
+
+.numbers {
+    width: 90%; /* Adjust width to fit smaller screens */
+    padding-top: 20px; /* Adjust padding for spacing */
+    padding-bottom: 20px; /* Adjust padding for spacing */
+}
+
+.footer {
+    flex-direction: column; /* Stack footer content vertically */
+    align-items: center; /* Center-align footer content */
+}
+
+.left-column {
+    flex-direction: column; /* Stack left column content vertically */
+    align-items: center; /* Center-align left column content */
+}
+.icon{
+    height: 10px;
+}
+}
